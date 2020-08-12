@@ -1,6 +1,9 @@
+import {isValidForMembership} from "../policies/MembershipPolicies";
+
 export default class MembershipsService {
 
-  constructor() {
+  constructor(user) {
+    this.user = user
   }
 
   setMemberships() {
@@ -16,6 +19,8 @@ export default class MembershipsService {
   }
 
   submitMembershipRequest() {
-
+    if (isValidForMembership(this.user)) {
+      // LOGIC
+    }
   }
 }
