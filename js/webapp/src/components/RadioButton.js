@@ -1,4 +1,8 @@
 import React from 'react';
+import { withErrorLabel} from "../hoc/withErrorLabel";
 
-export const RadioButton = (props) =>
+const RadioButton = (props) => (
   <input type='radio' {...props} />
+)
+
+export default withErrorLabel(RadioButton)

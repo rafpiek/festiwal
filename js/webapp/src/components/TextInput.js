@@ -1,5 +1,9 @@
 import React from 'react';
+import { withErrorLabel} from "../hoc/withErrorLabel";
 
-export const TextInput = (props) =>
-      <input type='text' {...props} />
+const TextInput = (props) => (
+  <input type='text' {...props} />
+)
+
+export default withErrorLabel(TextInput)
 
