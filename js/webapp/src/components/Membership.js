@@ -1,5 +1,5 @@
 import React, {useCallback} from 'react';
-import MembershipsService from "../services/MembershipsService";
+import MembershipsService from "../shared/services/MembershipsService";
 
 export const Membership = () => {
 
