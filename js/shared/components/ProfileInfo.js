@@ -1,11 +1,11 @@
 import React from 'react';
-import {ProfileInfoView} from "../../views/ProfileInfoView";
 
 export const ProfileInfo = (props) => {
+  const { view: View, ...restProps } = props
   //Some logi here
   const handleProfile = () => {
 
   }
 
-  return <ProfileInfoView  handleProfile={handleProfile}/>
+  return <View  handleProfile={handleProfile} {...restProps} />
 }
