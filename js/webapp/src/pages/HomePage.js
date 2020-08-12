@@ -1,12 +1,14 @@
 import React from 'react';
-import {Input, INPUT_TYPES} from "../components/Input";
+import {TextInput} from "../components/TextInput";
+import {Checkbox} from "../components/Checkbox";
+import {RadioButton} from "../components/RadioButton";
 
 export const HomePage = () => {
   return (
     <div className="container">
-      <Input type={INPUT_TYPES.text} />
-      <Input type={INPUT_TYPES.checkbox} />
-      <Input type={INPUT_TYPES.radio} />
+      <TextInput />
+      <Checkbox />
+      <RadioButton />
     </div>
   )
 }
