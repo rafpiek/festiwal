@@ -1,5 +1,5 @@
 import BaseCommand from "./BaseCommand";
-import {UserActions} from "../UserSlice";
+import {UserActions} from "../redux/UserSlice";
 import axios from 'axios'
 
 export default class CreateMember extends BaseCommand {

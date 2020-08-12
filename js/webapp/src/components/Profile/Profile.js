@@ -1,5 +1,5 @@
 import React from 'react';
-import {UserSelector} from "../../UserSlice";
+import {UserSelector} from "../../redux/UserSlice";
 import {useSelector} from "react-redux";
 
 const Profile = ({props}) => {

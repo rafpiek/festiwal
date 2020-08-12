@@ -1,7 +1,7 @@
 import React from 'react';
 import Profile from "../components/Profile/Profile";
 import {useSelector} from "react-redux";
-import {UserSelector} from "../UserSlice";
+import {UserSelector} from "../redux/UserSlice";
 
 export const ProfilePage = () => {
   const { user } = useSelector(UserSelector.getCurrentUser)

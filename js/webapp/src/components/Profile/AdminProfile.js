@@ -1,6 +1,6 @@
 import React from 'react';
 import {useSelector} from "react-redux";
-import {UserSelector} from "../../UserSlice";
+import {UserSelector} from "../../redux/UserSlice";
 import {ProfileForm} from "./UserProfile";
 import {Memberships} from "./MemberProfile";
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import {useSelector} from "react-redux";
-import {UserSelector} from "../../UserSlice";
+import {UserSelector} from "../../redux/UserSlice";
 
 export const UserProfile = () => {
   const user = useSelector(UserSelector.getCurrentUser)
