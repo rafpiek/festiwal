@@ -1,4 +1,5 @@
 import {isValidForMembership} from "../policies/MembershipPolicies";
+import ValidForMembership from "../policies/ValidForMembership";
 
 export default class MembershipsService {
 
@@ -15,6 +16,11 @@ export default class MembershipsService {
   }
 
   mergeMembership() {
+    const validForMembership = new ValidForMembership(this.user)
+
+    if (validForMembership.apply()) {
+      // do the logic
+    }
 
   }
 
