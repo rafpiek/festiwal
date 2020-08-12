@@ -1,0 +1,6 @@
+[submodule "shared"]
+	path = shared
+	url = git@github.com:rafpiek/shared.git
+[submodule "js/webapp/src/shared"]
+	path = js/webapp/src/shared
+	url = git@github.com:rafpiek/shared.git
