@@ -26,12 +26,11 @@ export const AdminProfile = () => {
       <div className="profile__header">{user.username}</div>
       <div className="actions">
         <div className="profile__form">
-          <ProfileForm />
           <UsersList />
+          <Memberships />
         </div>
       </div>
       <div className="container">
-        <Memberships />
       </div>
     </div>
   )

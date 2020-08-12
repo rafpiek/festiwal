@@ -25,8 +25,6 @@ export const MemberProfile = () => {
         <div className="profile__form">
           <ProfileForm />
         </div>
-      </div>
-      <div className="container">
         <Memberships />
       </div>
     </div>
