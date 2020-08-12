@@ -1,26 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-export default class Todo extends React.Component {
-  state = {
-    todo: {
-      completed: false,
-      title: "Learn React"
-    }
+export const Todo = ({ title }) => {
+
+  const [completed, setCompleted] = useState(false)
+
+  const handleTodoComplete = () => {
+    setCompleted(!completed)
+    // Do STH with TODO
   }
 
-  handleTodoComplete() {
-    this.setState({ todo: { ...this.state.todo, completed: !this.state.todo.completed } })
-  }
-
-
-  render() {
-    const { todo } = this.state;
-
-    return (
-      <div className="container">
-        <input type='checkbox' checked={todo.completed} onChange={this.handleTodoComplete}/>
-        <label>{todo.title}</label>
-      </div>
-    )
-  }
+  return (
+    <div className="container">
+      <input type='checkbox' checked={completed} onChange={handleTodoComplete}/>
+      <label>{title}</label>
+    </div>
+  )
 }
