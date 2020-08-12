@@ -1,17 +1,12 @@
 import React, {useState} from 'react';
+import {useCompleted} from "../../hooks/useCompleted";
 
 export const Todo = ({ title }) => {
-
-  const [completed, setCompleted] = useState(false)
-
-  const handleTodoComplete = () => {
-    setCompleted(!completed)
-    // Do STH with TODO
-  }
+  const [completed, handleComplete] = useCompleted()
 
   return (
     <div className="container">
-      <input type='checkbox' checked={completed} onChange={handleTodoComplete}/>
+      <input type='checkbox' checked={completed} onChange={handleComplete}/>
       <label>{title}</label>
     </div>
   )
