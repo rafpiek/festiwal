@@ -1,6 +1,6 @@
 import {configureStore} from '@reduxjs/toolkit';
 import {combineReducers} from 'redux';
-import {UserReducer} from 'modules/user/User.state';
+import {UserReducer} from 'view_modules/user/User.state';
 
 const reducers = combineReducers({
   user: UserReducer,
